@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    background-image: url(../img/cadena.jpg);
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar{
+    width: 20px;   
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(56, 55, 55);
+}
+
+
+
+header {
+    width:100%;
+    height:70px;
+    opacity: .7;
+    background-color: rgb(94, 93, 93);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marca{
+    width: 344px;
+    height: 70px;
+    background-color:  rgb(94, 93, 93);
+    border-radius: 10%;
+}
+
+#marca {
+    width: 150px;
+    height: 70px;
+    float: left;
+}
+
+.marca2{
+    width: 50%;
+    height: 39%;
+    color: rgba(255, 255, 255, 1000);
+    font-family: Verdana;
+    font-size: 135%;
+    float: left;
+    padding: 17px 0px 0px 0px;
+
+}
+
+
+nav#botonera_principal{
+    float: right;
+    width: 40%;
+    height:70px;
+    border-bottom-right-radius: 10%;
+}
+
+#icononav{
+    background-color: rgb(94, 93, 93);
+    border:none;
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    font-family: 'Cinzel Decorative';
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.links a:hover{
+    background-color: rgb(34, 32, 32);
+    color: rgb(184, 177, 177);
+    border-radius: 5px;
+}
+
+.links {
+    background-color:rgb(94, 93, 93);
+    width: 80px;
+    display: none;
+    border-radius: 5px;
+}
+
+.desplegable:hover .links{
+    display: block;
+
+    
+    
+}
+
+.desplegable{
+    position: absolute;
+}
+  
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    width: 20%;
+    height: 19%;
+    display: inline-block;
+    text-shadow: 0px 3px 1px rgb(66, 63, 63);
+    border-radius: 5px;
+    
+
+   
+}
+
+
+nav ul li a{
+    color:rgb(209, 209, 209);
+    text-decoration: none;
+    display: flex;
+    padding: 20px 13px;
+    margin-top: 6px;
+    font-family: 'Cinzel Decorative';
+    font-size: 13px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav ul li a:hover{
+    height: 18px;
+    color: rgb(230, 216, 228);
+    background-color:rgba(46, 42, 42, 0.842);
+    border-radius: 10px;
+    
+}
+
+
+.padre{
+    width: 98%;
+    height: 2000;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+
+
+.slides{
+    width: 90%;
+    height: auto;
+    justify-items: center;
+    z-index: -999;
+}
+
+.slides img{
+    width: 20%;
+    overflow: hidden;
+    
+}
+
+
+
+
+.scroll-to-top {
+    border: none;
+    bottom: -100px;
+    cursor: pointer;
+    position: fixed;
+    right: 25px;
+    font-size: 35px;
+    z-index: 99999;
+    color: rgb(153, 151, 151);
+}
+
+
+
+.caja1{
+    position: relative;
+    /*posisionexactadelelemento*/top: 3px;
+    right: 5px;
+    /*separaciondemargenizq*/width: 200px;
+    height: 80px;
+    background: rgb(34, 34, 34);
+    padding: 6px;
+    border-radius: 55px;
+    animation-name: animacion1;
+    -moz-animation-name: animacion1;
+    -ms-animation-name:animacion1;
+    animation-duration: 15s;
+    -moz-animation-duration: 15s;
+    -ms-animation-duration: 15s;
+    animation-iteration-count:infinite ; /*cantidadderepeticiones,numerosenteros,infiniteoheredada*/
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-interation-count:infinite;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+}
+
+.caja1 p{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+
+
+@keyframes animacion1{
+    0%{/*desde donde arranca la animacion*/
+        left: -330px;
+    }
+
+    50%{
+        left: 330px;
+        background: rgb(53, 53, 53);
+    }
+
+    100%{/*donde termina*/
+        left: -330px;
+        background: rgb(34, 34, 34);
+    }
+}
+
+
+.Contenido_principal{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+.img1{
+    width: 27%;
+    height: 100%;
+    background-image: url(../img/img1.PNG);
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+
+.presentacion{
+    width:70%;
+    background-color: rgba(49, 49, 48, .5);
+    margin-left: 15px;
+    border-radius: 7px;
+    
+}
+
+#biography{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color:rgb(139, 139, 139);
+    text-align: center;
+}
+
+
+.contenidoarticulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color:rgb(190, 190, 190);
+    text-indent: 20px;
+    text-align: left;
+    text-justify: auto;
+    line-height: 150%;
+    padding: 10px;
+
+}
+
+
+h1.titulo{
+    background-color: rgba(48, 47, 47, 0.445);
+    font-family: 'Playfair Display';
+    color: rgb(172, 168, 177);
+    text-align: center;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    margin-top: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+label{
+    color: cornsilk;
+}
+
+input, textarea, button{
+    background-color: rgb(92, 92, 92);
+    margin: 5px;
+}
+
+.footer{
+    width: 100%;
+    height:auto;
+    opacity: .9;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    background-color: rgb(37, 37, 37);
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    
+}
+
+
+.datos{
+    width:50%;
+    height:100%;
+}
+
+.imgperfil{
+    float: left;
+}
+
+.misdatos{
+    width: 40%;
+    font-family: Verdana;
+    font-size: 15px;
+    color:rgb(255, 166, 166);
+    line-height: 25px;
+    text-align: left;
+    float: left;
+    padding: 10px 0px 0px 10px;
+}
+
+.redes{
+    width:20%;
+    height:73px;
+    float: right;
+   
+}
+
+.redes ul li{
+    width: 21%;
+    height: 19%;
+    display: inline-block;
+   
+}
+.redes ul li a{
+    color:rgb(189, 179, 179);
+    border-radius: 5px;
+}
+
+.redes a:hover{
+    width: 27px;
+    height: 15px;
+    padding-top: 12px;
+    color: rgb(201, 201, 201);
+    background-color:black;   
+}
+
+.icono{
+    font-size: 40px;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+
+    nav#botonera_principal{
+        width: 0.5%;
+        display: none;
+    }
+
+    #icononav{
+        display: block;
+    }
+
+    .desplegable{
+        position: absolute;
+        top: 0;
+        left: 0;
+   
+    }
+
+    .marca{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .padre{
+        margin-top: 10px;
+    }
+
+
+    .Contenido_principal{
+        height: 280px;
+        margin-left: 20px;
+    }
+    
+    .presentacion{
+        width:70%;
+        margin-left: 10px;
+        height: auto;
+    }
+
+    .tituloarticulo{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    
+    .contenidoarticulo{
+        font-size: 13px;
+        color:rgb(190, 190, 190);
+        text-indent: 10px;
+        line-height: 175%;
+    }
+    
+
+    .img1{
+        width: 26%;
+        height: 100%;
+    }
+
+    article.contenidoarticulo2{
+        width: 60%;
+        height:300px;
+    }
+
+    .texto{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .img2{
+        width:35%;
+        height:300px;
+        margin-top:5px;
+        margin-left: 15px;
+    }
+
+    .destacado{
+        width: 100%;
+        height: 100px;
+        margin-left: 0px;
+
+    }
+
+    .contenidodestacado{
+        font-size:36px;
+        line-height: 50px;
+        font-weight: bold;
+
+
+    }
+
+    .imagen_aside{
+        height: 150px;
+        width: 100%;
+    }
+
+    
+    .footer{
+        height: 200px;
+    }
+
+    .datos{
+        width: 60%;
+        height: 200px;
+    }
+
+    .misdatos{
+        width: 50%;
+        height: 90%;
+        font-size: 10px;
+    }
+
+    .redes{
+        width: 35%;
+    }
+
+    .redes ul li{
+        margin:2px;
+    }
+
+}
+
+@media all and (max-width: 599px){
+
+    body::-webkit-scrollbar{
+        width:0px;   
+        }
+    
+    .marca{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #marca{
+        padding-top: 10px;
+        width: 70px;
+        height: auto;
+    }
+
+    .marca2{
+        width: 30%;
+        height: 39%;
+        font-size: 100%;
+    }
+
+    nav#botonera_principal{
+        width: 0.5%;
+        display: none;
+    }
+
+    #icononav{
+        display: block;
+        position: relative;
+    }
+
+    button{
+        outline-style: none;
+
+    }
+
+
+    
+    .desplegable{
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+    }
+
+    .links{
+        position: absolute;
+        padding-top: 15px;
+    }
+
+    .padre{
+        padding: 0px;
+        margin-top: 10px;
+        
+    }
+    
+
+    .Contenido_principal{
+        margin-bottom: 15px;
+    }
+
+    
+    .presentacion{
+        width:100%;
+        margin-left: 5px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .img1{
+        width:100%;
+        height:230px;
+        margin-left: 5px;
+    }
+
+    .tituloarticulo{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    
+    .contenidoarticulo{
+        font-size: 9px;
+        line-height: 200%;
+        text-indent: 5px;
+    }
+
+    article.contenidoarticulo2{
+        margin-top: 20px;
+        width: 100%;
+        height:auto;
+    }
+
+    .texto{
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .img2{
+        width:100%;
+        height:230px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+    }
+
+    .destacado{
+        padding-top: 20px;
+        width: 100%;
+        height: 100px;
+        margin-left: 0px;
+    }
+
+    .contenidodestacado{
+        padding-top:20px ;
+        font-size:16px;
+        line-height: 36px;
+        font-weight: 900;
+
+    }
+
+    .imagen_aside{
+        height: 150px;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    footer{
+        margin-top: 5px;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .datos{
+        width: 100%;
+        height: auto;
+    }
+
+    .misdatos{
+        width: 50%;
+        height: auto;
+        font-size: 10px;
+    }
+
+    .redes{
+        width: 100%;
+    }
+
+    .redes ul li{
+        width: 5%;
+        margin:9px;
+    }
+
+    .redes a:hover{
+        width: 10px;
+        height: 10px;
+    }
+
+    .icono{
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
